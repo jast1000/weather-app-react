@@ -1,0 +1,18 @@
+.weatherDataContainer {
+    background-color: red;
+    width: 400px;
+    height: 100px;
+    line-height: 100px;
+}
+
+.weatherExtraInfoContainer {
+    background-color: green;
+    width: 40%;
+    display: inline-block;
+}
+
+.weatherTemperatureContainer {
+    background-color: blue;
+    width: 60%;
+    display: inline-block;
+}

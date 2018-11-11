@@ -1,10 +1,10 @@
 import React from 'react';
 import WeatherIcons from 'react-weathericons';
 import PropTypes from 'prop-types';
-
 import {
     CLOUD, CLOUDY, SUN, RAIN, SNOW, WINDY
-} from '../constants/weathers';
+} from '../../../constants/weathers';
+import './styles.css';
 
 const icons = {
     [CLOUD]: 'day-cloud',
@@ -26,7 +26,7 @@ const getWeatherIcon = state => {
 const WeatherTemperature = (props) => {
     const {temperature, state} = props;
     return (
-        <div>
+        <div className="weatherTemperatureContainer">
             {getWeatherIcon(state)}      
             <span>{`${temperature}°`}</span>
         </div>
